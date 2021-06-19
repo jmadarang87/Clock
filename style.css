@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;500&family=Orbitron&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;   
+
+}
+
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +22,14 @@ body {
     color: white;
 }
 
+#digital {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
 .clock {
     background-color: white;
     padding: 200px;
@@ -24,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 9px solid black;
+    box-shadow: 10px 10px 15px black;
 }
 
 .clock-center {
@@ -44,8 +59,8 @@ body {
 #hour-hand {
     --hh-degrees: 0deg;
     background-color: rgb(146, 90, 211);
-    width: 5px;
-    height: 150px;
+    width: 10px;
+    height: 120px;
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%) rotate(var(--hh-degrees));
@@ -58,8 +73,8 @@ body {
 #minute-hand {
     --mh-degrees: 0;
     background-color: rgb(62, 173, 173);
-    width: 5px;
-    height: 200px;
+    width: 8px;
+    height: 180px;
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%) rotate(var(--mh-degrees));
@@ -71,8 +86,8 @@ body {
 
 #second-hand {
     --sh-degrees: 0;
-    width: 5px;
-    height: 150px;
+    width: 3px;
+    height: 180px;
     background-color: rgb(255, 43, 117);
     position: absolute;
     bottom: 50%;
@@ -82,19 +97,6 @@ body {
     border-radius: 5px 5px 0 0;
     z-index: 7;
 }
-
-/* .center-dot {
-    background-color: black;
-    border-radius: 50%;
-    bottom: 50%;
-    left: 50%;
-    top: -7.5px;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    transform: translateX(-50%);
-    z-index: 10;
-} */
 
 .clock-numbers {
     color: black;
@@ -115,7 +117,7 @@ body {
 #num-2 {
     position: absolute;
     right: -160px;
-    top: -120px;
+    top: -110px;
 }
 
 #num-3 {
@@ -166,7 +168,7 @@ body {
 #num-10 {
     position: absolute;
     left: -160px;
-    top: -120px;
+    top: -110px;
 
 }
 
