@@ -12,15 +12,18 @@ body {
     justify-content: center;
     height: 100vh;
     margin:0;
+    background-image: linear-gradient( rgb(255, 43, 117), rgb(62, 173, 173), rgb(146, 90, 211));
+    color: white;
 }
 
 .clock {
-    background-color: purple;
+    background-color: white;
     padding: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 9px solid black;
 }
 
 .clock-center {
@@ -40,9 +43,9 @@ body {
 
 #hour-hand {
     --hh-degrees: 0deg;
-    background-color: yellow;
+    background-color: rgb(146, 90, 211);
     width: 5px;
-    height: 200px;
+    height: 150px;
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%) rotate(var(--hh-degrees));
@@ -54,9 +57,9 @@ body {
 
 #minute-hand {
     --mh-degrees: 0;
-    background-color: cyan;
+    background-color: rgb(62, 173, 173);
     width: 5px;
-    height: 150px;
+    height: 200px;
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%) rotate(var(--mh-degrees));
@@ -70,7 +73,7 @@ body {
     --sh-degrees: 0;
     width: 5px;
     height: 150px;
-    background-color: red;
+    background-color: rgb(255, 43, 117);
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -94,7 +97,7 @@ body {
 } */
 
 .clock-numbers {
-    color: pink;
+    color: black;
     font-size: 36px;
     width: 20px;
     height: 20px;
